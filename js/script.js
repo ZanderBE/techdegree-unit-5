@@ -13,7 +13,7 @@ function searchFilter() {
     let imageList = $('.gallery a');
     let resultsFound = 0;
 
-    //check for matching information in a[data-title] attribute
+    //check for matching information in gallery of images
     imageList.each(function(i, image) {
         if ($(image).attr('data-title').search(searchBox) != -1) {
           $(image).show();
